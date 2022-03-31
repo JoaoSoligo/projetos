@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('/pacote-projeto-d010/fontes/BebasNeue-Regular.otf');
+    src: url('../pacote-projeto-d010/fontes/BebasNeue-Regular.otf');
 }
 
 @font-face {
     font-family: 'Android';
-    src: url('/pacote-projeto-d010/fontes/IDroid.otf') format('opentype');
+    src: url('../pacote-projeto-d010/fontes/IDroid.otf') format('opentype');
     font-weight: normal;
 }
 
@@ -60,6 +60,7 @@ header > p {
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
+    padding-bottom: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.363);
 }
 
