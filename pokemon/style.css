@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Don Jose';
+    src: url('fontes/don-jose/DonJose_Raices.otf');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fontes/bebas_neue/BebasNeue-Regular.otf');
+}
+
+:root {
+    --menu: #6e6e6ec2;
+    --cor1: #a3a3a3;
+    --cor2: #818181;
+    --cor3: #686a6b;
+    --cor4: #424242;
+    --cor5: #252525;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-don-jose: 'Don Jose', cursive;
+    --font-bebas-neue: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font-bebas-neue);
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.342);
+}
+
+
+header > p {
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.123);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.205);
+}
+
+nav > a {
+    color: var(--menu);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    text-decoration: none;
+    font-family: bold;
+    transition-duration: 0,5s;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.199);
+}
+
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor5);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main h1 {
+    font-family: var(--font-don-jose);
+    color: var(--cor5);
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--font-don-jose);
+    color: var(--cor4);
+    font-size: 1.6em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+
+main h2.top {
+    margin-top: 20px;
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main p.indent {
+    text-indent: 30px;
+}
+
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+    padding: 2px 2px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;  
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
