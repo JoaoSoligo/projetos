@@ -39,6 +39,7 @@ header {
 
 header > h1 {
     font-family: var(--font-bebas-neue);
+    color: rgba(0, 0, 0, 0.404);
     padding-top: 30px;
     margin-bottom: 20px;
     font-size: 3em;
@@ -48,6 +49,7 @@ header > h1 {
 
 header > p {
     font-family: var(--font-padrao);
+    color: rgba(0, 0, 0, 0.404);
     font-size: 1.2em;
     max-width: 500px;
     padding-left: 10px;
@@ -92,6 +94,10 @@ main {
 
 main img {
     width: 100%;
+}
+
+table th,td {
+    text-align: center;
 }
 
 div.video {
